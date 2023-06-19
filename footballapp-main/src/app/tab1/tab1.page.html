@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Daily Transfer News
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let article of data">
+    <ion-card-header>
+      <img [src]="article.urlToImage"> 
+      <ion-card-title>{{article.title}}</ion-card-title>
+      <ion-card-subtitle>{{article.author}}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+    {{article.description}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
