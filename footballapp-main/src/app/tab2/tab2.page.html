@@ -1,8 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title>
-      Daily Transfer News
-      <ion-button [routerLink]="['/tab2']">Favourites</ion-button>
+      Favourite articles
     </ion-title>
   </ion-toolbar>
   <ion-searchbar
@@ -22,6 +21,6 @@
     <ion-card-content>
     {{article.description}}
     </ion-card-content>
-    <ion-button [href]="article.url">Read more</ion-button>     <ion-button>Favourite</ion-button> <ion-button>UnFavourite</ion-button>
+    <ion-button [href]="article.url">Read more</ion-button> <ion-button>UnFavourite</ion-button>
   </ion-card>
 </ion-content>
